@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+</head>
+
+<body>
+
+  <div id="outer-container">
+
+
+    <div id="summary">
+      <div id="title-image">
+        <!-- has a background image -->
+      </div>
+      <div id="score-container">
+        <div id="score-title">
+          <h3>SCORE</h3>
+          <hr>
+        </div>
+        <div id="score-results-container">
+
+          <div id="score-value">
+            <div>
+              <h4>YOU</h4>
+              <h2 id="player-score" class="score-value-inner">0</h2>
+            </div>
+
+            <div>
+              <h4>CPU</h4>
+              <h2 id="cpu-score" class="score-value-inner">0</h2>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div><!-- closing Summary -->
+
+    <div>
+
+      <div id="game-options">
+        <div id="top-options-row">
+          <div id="paper" class="paper">
+          </div>
+          <div id="scissors" class="scissors">
+          </div>
+        </div> <!-- closing row for paper & scissors -->
+        <div id="bottom-options-row">
+          <div id="rock" class="rock">
+          </div>
+        </div> <!-- closing row for rock & scissors -->
+      </div>
+    </div>
+
+    <div id="results">
+
+      <div id="player-selection">
+        <h3 class="competitor">YOU PICKED</h3>
+        <div class="paper">
+        </div>
+        <div class="scissors">
+        </div>
+        <div class="rock">
+        </div>
+      </div>
+
+      <div id="restart-container">
+        <h2 id="result-display"></h2>
+        <button id="play-again">PLAY AGAIN</button>
+      </div>
+
+      <div id="computer-selection">
+        <h3 class="competitor">THE HOUSE PICKED</h3>
+        <div class="paper">
+        </div>
+        <div class="scissors">
+        </div>
+        <div class="rock">
+        </div>
+        <div class="empty-placeholder">
+
+        </div>
+      </div>
+
+    </div>
+
+    <div id="rules">
+      <button id="rules-button" type="button">RULES</button>
+    </div>
+
+    <div id="modal">
+      <span id="close-modal">&times;</span>
+      <!-- <p>Hello</p> -->
+    </div>
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Tom Nightingale</a>.
+  </div>
+
+  <script src="index.js">
+
+  </script>
+</body>
+
+</html>
